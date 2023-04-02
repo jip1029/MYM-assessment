@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#image-container {
+  background-color: #427aa1;
+  position: relative;
+  width: 700px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  z-index: 99 !important ;
+  opacity: 0.8;
+}
+
+#image-container img {
+  margin-top: 10px;
+  width: 70%;
+  height: auto;
+  border-radius: 50%;
+}
+
+#image-container h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#image-container p {
+  width: 90%;
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+}
