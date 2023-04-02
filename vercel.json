@@ -1,0 +1,13 @@
+{
+  "build": {
+    "env": {
+      "MONGODB_URI": "mongodb+srv://jip1029:Updown1029@nasaimageappdb.h4indjy.mongodb.net/?retryWrites=true&w=majority"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
