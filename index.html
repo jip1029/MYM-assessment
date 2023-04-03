@@ -16,7 +16,9 @@
       <input type="password" id="password" name="password" required />
 
       <button type="submit">Signup</button>
-      <button type="submit" onclick="window.location.href='login'">
+      <button type="submit" onclick="fetch('/login')
+      .then(response => console.log(response))
+      .catch(error => console.error(error));">
         Go to Login
       </button>
     </form>

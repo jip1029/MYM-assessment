@@ -21,7 +21,7 @@ const app = express();
 // );
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public'));
+app.use(express.static(__dirname));
 
 // mongoose.connect(
 //   'mongodb+srv://jip1029:Updown1029@nasaimageappdb.h4indjy.mongodb.net/?retryWrites=true&w=majority',
@@ -78,14 +78,14 @@ app.post('/login', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile('index.html', { root: 'public' });
+  res.sendFile('index.html', { root: __dirname });
 });
 
 app.get('/image', (req, res) => {
   // if (req.session.userId === undefined) {
   //   return res.redirect('/');
   // }
-  res.sendFile('image.html', { root: 'public' });
+  res.sendFile('image.html', { root: __dirname });
 });
 
 app.get('/apod', (req, res) => {
@@ -103,7 +103,7 @@ app.get('/apod', (req, res) => {
 });
 
 app.get('/login', (req, res) => {
-  res.sendFile('login.html', { root: 'public' });
+  res.sendFile('login.html', { root: __dirname });
 });
 
 app.listen(3000, () => {

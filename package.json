@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node public/server.js",
+    "start": "node server.js",
     "build": "echo 'No build necessary for Node.js app'"
   },
   "dependencies": {
