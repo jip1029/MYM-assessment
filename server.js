@@ -82,9 +82,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/image', (req, res) => {
-  if (req.session.userId === undefined) {
-    return res.redirect('/');
-  }
+  // if (req.session.userId === undefined) {
+  //   return res.redirect('/');
+  // }
   res.sendFile('image.html', { root: 'public' });
 });
 
